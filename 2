@@ -4,36 +4,59 @@ Before we start, it’s worth explaining the nomenclature of this book. There ar
 И прежде чем двигаться дальше, еще одно замечание - терминологичское. Есть два основных управляющих элемента (контроллера), которые, кстати, используются не только в синтезаторах. 
 
 
-
 Pots are circular controls such as this one:
-
 
 Первый, это ручка (pot). Положение ручки я указываю по аналогии с часовой стрелкой. Например, положение первой ручки – полдень, а второй – на 3 часа:
 
-
 In addition to pots, there are sliders. This is a slider:
 
-Еще один вид контроллера это слайдер (slider):
+Еще один вид контроллера - слайдер (slider):
 
-У этого слайдера нет шкалы, поэтому точное числовое значение указать невозможно. В данном случае назовем его положение просто "Наполовину вверх".
-
-
-
-
-
-
+У этого слайдера нет шкалы, поэтому его точное числовое значение указать невозможно. В данном случае назовем его положение просто "Наполовину вверх".
 
 In addition to learning the nomenclature of all the different parts of a synthesizer, you will also be set exercises at the end of most chapters. These will either be in the form of practice or a Q&A. The answers to the Q&A are in Appendix A. If you’re using an electronic version of the book, there will be a link to Appendix A at the end of each chapter and a link back to the chapter within the answers.
 
 Hopefully by now, you’ve installed Caustic on whatever device you intend to be using, and you’re sat with baited breath, ready to program some beauty into your synthesizer. Let's dive in – but not before we have learned some theory.
 
-
 Обратите внимание, в конце большинства глав есть упражнения - в виде практических заданий или вопросов (ответы на вопросы приведены в Приложении A).
 
-Итак, вы установили Caustic (или что-то другое) и практически готовы начать погружение в прекрасный мир звукового синтеза, однако, сначала немного теории.
+Итак, вы установили Caustic (или что-то другое) и, в общем, готовы начать погружение в прекрасный мир звукового синтеза, но все-таки, сначала немного теории.
 
 
 
+Chapter 1 – What is sound?
+What is sound?
+
+Глава 1 - Что такое звук?
+
+It’s an almost infuriatingly simple question, isn’t it?
+
+До обидного простой вопрос, не так ли?
+
+However, a synthesizer at its very basic level is a sound generator. In order to harness its power to the best of its ability, it’s important to understand what sound is, and how it works.
+
+Однако, раз уж мы говорим о синтезаторах - генераторах звука - необходимо очень хорошо понимать, что такое звук и как мы его воспринимаем.
+
+Sound is a pressure wave that ripples out from a source (e.g. a drum being struck). This pressure wave is picked up by a tiny membrane within your ear called an eardrum, through which the signal is passed, via some intricate biological mechanisms, to your brain – which translates the signal into the sound perceived.
+
+Звук - это колебание давления, волнообразно распространяющееся из какого-либо источника (например, от удара по барабану). Это колебание давления воспринимается крошечной мембраной внутри уха - барабанной перепонкой, через которую передается во внутреннеее ухо. Здесь происходит довольно сложное преобразования механического процесса в нервные импульсы и передача их в мозг - а наше сознание воспринимает эти сигналы как звук.
+
+The three most important properties of sound waves, as they pertain to synthesis, are frequency, amplitude and waveform. The following graphic represents all three:
+
+These three properties are explained below:
+
+Три важнейшие характеристики звука, имеющие отношение к его синтезу, это частота, амплитуда и форма волны. На этом графике представлены все три:
+
+
+These three properties are explained below:
+    1) Amplitude. This is how big the sound wave is. Bigger sound waves sound louder, smaller sound waves sound quieter.
+    2) Frequency. This is how often a wave reaches its trough (i.e. hits the bottom of its cycle). It is measured in Hertz, which is how many of these troughs occur per second. Hertz, when written, is generally shortened to Hz. Even if you haven’t heard of Hertz in the context of music, you will have heard of it in other contexts. For example, tuning an analogue radio to 252kHz means you’re tuning it to a radio wave frequency of 252,000 cycles per second (which, in itself, is quite mind blowing).
+    3) Waveform. Waveform is the actual shape of the sound wave. This affects what the sound is perceived as. For example, this is a waveform of a synthesized kick drum:
+
+
+1) Amplitude. Амплитуда отражает мощность звуковой волны. Чем больше амплитуда, тем громче звук, и наоборот.
+2) Frequency. Частота означает количество колебаний в единицу времени. Она измеряется в Герцах (Hz), т.е. количестве колебаний в секунду. Даже если вы не слышали о Герце в контексте музыки, вы слышали об этом в других контекстах. Например, настроив аналоговое радио на 252 кГц означает, что вы настроите его на частоту радиоволн 252,000 циклов в секунду (что само по себе просто сногсшибательно).
+    ) Волновая форма. Волновая форма - это фактическая форма звуковой волны. Это влияет на то, как воспринимается звук. Например, это волновая форма синтезированного барабана:
 
 
 
