@@ -1,1 +1,130 @@
-How_To_Program_Any_Synthesizer
+Ashley Hewitt
+How To Program Any Synthesizer
+
+Preface
+Chapter 1 – What is sound? Chapter 2 – Active listening Chapter 3 – What is synthesis? Chapter 4 – Getting started
+Chapter 5 – An Introduction to Caustic Chapter 6 – Single Oscillators
+Chapter 7 – Oscillator mixing & manipulation Chapter 8 – Filters
+Chapter 9 – Envelopes Chapter 10 – Filter Envelopes Chapter 11 – LFOs
+Chapter 12 – Polyphony Chapter 13 – Effects Chapter 14 - Delay Effects
+Chapter 15 - Modulation Effects Chapter 16 - Parametric Equalization Chapter 17 - Compression
+Chapter 18- Creating a Bass Chapter 19 - Creating a Pad Chapter 20 - Creating a Lead Chapter 21 - Creating Chords Chapter 22 – Recreating Sounds Chapter 23 – Drum synthesis Chapter 24 – Routing matrices Chapter 25– Other synthesizers Chapter 26 – Character
+Chapter 27 - Experimenting with other synthesizers Chapter 28 - Concluding thoughts
+Appendix A – Q&A Exercise answers Appendix B – Areas and functions of Caustic Index
+
+Preface
+
+This book was conceived as a consequence of a long time spent struggling with synthesizers, be it hardware or software. Most producers want to stop using presets and fashion their own palette of sounds, but find that even if they create a beautiful sound by accident, the subsequent recreation of that sound is out of reach.
+
+Идея этой книги возникла в процессе моей работы с синтезаторами, железными и виртуальными, иногда довольно утомительного, по вытягиванию из них нужного тембра. 
+
+Идея этой книги возникла в процессе моей работы с синтезаторами, во время многочасовых попыток добится нужного тембра. Аппаратный ли это синтезатор или программный, я, как и большинство музыкантов, предпочитаю создавать собственные оригинальные звуки, а не использовать пресеты. Но часто сталкиваешься с тем, что воспроизвести удачный звук потом не удается.
+
+I believe that this is due to an unstructured knowledge of how synthesizers work. This book was written to give you the ability to adapt to and work with any synthesizer that you happen across, freeing you to make the beautiful music that you've always wanted to create.
+
+Думаю, это связано с отсутствием полного понимания того, как работает синтезатор. Поэтому попробуем в этом разобраться, чтобы спокойно работать с любым инструментом, не отвлекаясь на решение технических вопросов. 
+
+In the same way that there are different cars, there are different synthesizers, all of which work slightly differently. They all, however, possess the same underlying structure. If you have the correct mental toolkit, you will quickly be able to adapt to any new synthesizer you come across. This book will provide you with that mental toolkit.
+
+Также как, например, автомобили, синтезаторы могут быть устроены немного по-разному. Однако, основные принципы одни и теже, поэтому, зная их, можно быстро приспособиться к любому синтезатору.
+
+A common criticism of synthesizer teaching resources is that they only provide information as to how to work one specific model of synth, and not whichever synthesizer the user possesses.
+
+Общая проблема учебных курсов по работе с синтезаторами - они дают информацию о какой-то определенной модели, и это совсем не обязательно тот инструмент, который есть у вас .
+
+Unfortunately, it’s not possible to account for all models of synthesizer in one book. It’s also very easy, when struggling to understand synthesis, to flit from synthesizer to synthesizer, only understanding its most basic functions, never getting to know a synthesizer in depth.
+
+С другой стороны, невозможно охватить все модели синтезаторов в одной книге. Кроме того, есть опасность, разбираясь в принципах звукового синтеза, метаться от модели к модели, получая представление лишь об их основных возможностях, и не изучив ни одной достаточно глубоко.
+
+Therefore, this book’s lessons are entirely based on one synthesizer – Caustic’s SubSynth. The reason I’ve chosen SubSynth is that it’s a simple,
+basic subtractive synthesizer (i.e. you pick a waveform or two, and then shape it afterwards). It does everything reasonably well, with no bells and whistles, and is therefore a perfect synthesizer to learn with.
+
+Поэтому в этой книге рассматривается один конкретный синтезатор – Caustic SubSynth. Причина, по которой я выбрал именно его – это простой субтрактивный (т.е. вы берете один или два сигнала, и затем подвергаете их обработке, формируя нужную формы волны) синтезатор с базовым набором возможностей. Все, что он делает, он делает достаточно хорошо и без лишних примочек, поэтому это отличный вариант для обучения.
+
+It is available on a music-making platform called Caustic, which is cheap and available for virtually any computing platform you own. As of writing, it’s available on Android and iOS through their respective App stores, and available on, PC and Mac at http://www.singlecellsoftware.com/caustic. I strongly suggest you acquire it before you begin the exercises in this book.
+
+Это недорогой виртуальный синтезатор, доступный на Mac, Windows,  Linux (с Wine), Android, iPhone и iPad. Поэтому я рекомендую выполнять упражнения этой книги именно на нем.
+
+Впрочем, есть и другие простые виртуальные синтезаторы, которые вполне подойдут, например:
+    • Reason's Subtractor synth
+    • Logic Pro X's Retro Synth (используйте analog mode)
+    • Ableton's Analog
+    • Blaukraut Engineering's free Charlatan synth (для Windows)
+    • TAL's free Elek7ro
+    
+However, if you are not using Caustic, transferring the knowledge from the synthesizer in this book to whatever synthesizer you're using may be difficult. Embrace that difficulty as part of the fun. This book is all about getting hands-on with whatever gear you're using and working things out for yourself, applying the knowledge gleaned from this book. At the same time, don't expect it to be too difficult! Synthesizers have not changed drastically in the decades since they've been invented, and this is testament to their intuitive design.
+
+Если вы используете не Caustic, вам придется немного переосмысливать то, что говорится, применительно к своему синтезатору. Воспринимайте это как часть учебного процесса, ведь, в конце концов, наша задача – научиться работать с любым синтезатором. Каких-то невероятных трудностей возникнуть не должно, ведь эти устройства не особо изменились за десятки лет, прошедших со времени их появления, а это явный признак интуитивно понятного дизайна.
+
+Feeling uncomfortable transferring one’s knowledge from one synthesizer to another, in my eyes, is merely a product of lacking structured knowledge. All synthesizers use a very similar design, and have done so for decades – and transferring your knowledge from one synthesizer to another is easy if you understand the functions of all the different parts of the synthesizer and how they fit together. This book will furnish you with this knowledge.
+
+Проблемы при переходе с одного синтезатора на другой, на мой взгляд, говорят о пробелах в понимании их устройства. Все синтезаторы имеют очень похожий дизайн (в инженерном смысле), поэтому, если вы хорошо понимаете функции его составных частей, и то, как они взаимодействуют друг с другом, такие проблемы не возникают. Достижению такого понимания и посвящена эта книга.
+
+I make no assumptions as to your level of knowledge as a reader, so if you have a background in music technology, you may already know some (or even lots) of the theory referred to in the book. If that is the case, then there’s no harm in confirming what you already know! I’d much rather an experienced music technologist be forced to skim some of the simpler parts of this book than have someone with little experience be forced to fill in knowledge gaps outside of this book.
+
+Возможно, что-то или даже многое из того, что здесь, вы и так уже знаете. Думаю, это не проблема, лучше продвинутый читатель прочтет о чем-то лишний раз или пропустит пару страниц, чем у начинающего возникнет недопонимание или необходимость искать нужную информацию где-то еще.
+
+Before we start, it’s worth explaining the nomenclature of this book. There are two main controls that we’ll be using in Caustic’s SubSynth - and these types of control happen to be prevalent in many electronic devices.
+
+И еще несколько вводных замечаний, прежде чем мы начнем. Существует два основных элемента управления, которые используются не только в Caustic SubSynth, но и во многих электронных устройствах. 
+
+The sound experiments in this book will explore the full spectrum of sounds that subtractive synthesizers have to offer, so a better audio setup will give you better results. Even a decent pair of headphones plugged into your device will work – just don't rely on phone speakers!
+
+Pots are circular controls such as this one:
+
+Первое, это ручка (pot):
+
+I refer to the position of the indicator on the pot by the time it shows if it was on a clock. For example, the pot above would be at midday. The pot below would be at 3 o’clock:
+
+Я указываю положение ручки по аналогии с часами, как если бы её индикатор был часовой стрелкой. Например, положение ручки выше – полдень, а ручки ниже – 3 часа:
+
+In addition to pots, there are sliders. This is a slider:
+
+Кроме ручек, есть еще слайдеры, вот такие:
+
+
+
+I tend to refer to sliders as to their location - I’d refer to the above slider as being halfway up.
+
+In addition to learning the nomenclature of all the different parts of a synthesizer, you will also be set exercises at the end of most chapters. These will either be in the form of practice or a Q&A. The answers to the Q&A are in Appendix A. If you’re using an electronic version of the book, there will be a link to Appendix A at the end of each chapter and a link back to the chapter within the answers.
+
+Hopefully by now, you’ve installed Caustic on whatever device you intend to be using, and you’re sat with baited breath, ready to program some beauty into your synthesizer. Let's dive in – but not before we have learned some theory.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
